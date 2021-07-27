@@ -8,8 +8,8 @@ const Tasks = ({tasks, onDelete, onToggle}) => {
         <>
            {/* {tasks.map((task) => (<h3 key={task.id}>{task.text}</h3>)
            )}  */}
-           {tasks.map((task) => (
-           <Task key={task.id} task={task} onDelete={onDelete} onToggle={onToggle}/>
+           {tasks.map((task, index) => (
+           <Task key={index} task={task} onDelete={onDelete} onToggle={onToggle}/>
            ))} 
         </>
     )
